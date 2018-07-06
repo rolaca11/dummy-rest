@@ -1,8 +1,7 @@
 var express = require('express');
 var knex = require('knex')({
     client: 'pg',
-    // connection: process.env.PG_CONNECTION_STRING,
-    connection: 'postgres://dssgdpr@dssgdprpostgres:AaL3R9P3FBJ9VyFA@dssgdprpostgres.postgres.database.azure.com:5432/pentaho-test-data'
+    connection: process.env.PG_CONNECTION_STRING,
 });
 
 /* GET users listing. */
